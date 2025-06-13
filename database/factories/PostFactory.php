@@ -26,7 +26,7 @@ class PostFactory extends Factory
             'slug' => Str::slug($title),
             'publication_date' => $status == 'P' ? now() : null,
             'status' => $status,
-            'featured_image_url' => fake()->imageUrl(640, 480, 'animals', true)
+            'featured-image-url' => fake()->imageUrl(640, 480, 'animals', true)
         ];
     }
 }
